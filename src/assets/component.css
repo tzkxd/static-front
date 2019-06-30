@@ -1,0 +1,23 @@
+.main-color,
+.card-header {
+	background-color: forestgreen;
+}
+
+#menu1,
+#menu2,
+#menu3,
+#lead,
+#achi,
+#set,
+#logo {
+	text-decoration: none;
+	color: #000000;
+}
+
+.game-height {
+	height: 450px;
+}
+
+.answer-edit {
+	width: 250px;
+}
