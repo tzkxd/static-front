@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import test from "./img/Aragami.png";
+import classroom from "./img/Classroom.png";
+import battleground from "./img/Battleground.png";
+import sandbox from "./img/Sandbox.png";
 
 import "../assets/component.css";
 
@@ -20,28 +22,36 @@ class Menu extends Component {
 							<h4 className="my-0 font-weight-normal">Classroom</h4>
 						</div>
 						<div className="card-body">
-							<img className="card-img-top" src={test} alt="temp" />
+							<img className="card-img-top" src={classroom} alt="temp" />
 							<a className="stretched-link" href="#" />
 						</div>
 					</Link>
-					<div className="card shadow-sm border-success" id="menu2">
+					<Link
+						to="/battleground"
+						className="card shadow-sm border-success"
+						id="menu2"
+					>
 						<div className="card-header bg-success">
 							<h4 className="my-0 font-weight-normal">Battleground</h4>
 						</div>
 						<div className="card-body">
-							<img className="card-img-top" src={test} alt="temp" />
+							<img className="card-img-top" src={battleground} alt="temp" />
 							<a className="stretched-link" href="#" />
 						</div>
-					</div>
-					<div className="card shadow-sm border-success" id="menu3">
+					</Link>
+					<Link
+						to="/sandbox"
+						className="card shadow-sm border-success"
+						id="menu3"
+					>
 						<div className="card-header bg-success">
 							<h4 className="my-0 font-weight-normal">Sandbox</h4>
 						</div>
 						<div className="card-body">
-							<img className="card-img-top" src={test} alt="temp" />
+							<img className="card-img-top" src={sandbox} alt="temp" />
 							<a className="stretched-link" href="#" />
 						</div>
-					</div>
+					</Link>
 				</div>
 			</div>
 		);

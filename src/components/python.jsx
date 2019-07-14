@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 
-import test from "./img/Aragami.png";
+import test from "./img/Logo.PNG";
 
 import "../assets/component.css";
 
@@ -19,7 +19,7 @@ class Python extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 						<div className="card-footer bg-success">
-							<h4 className="my-0 font-weight-normal">Classroom</h4>
+							<h4 className="my-0 font-weight-normal">Getting started</h4>
 						</div>
 					</Link>
 					<div className="card shadow-sm border-success" id="menu2">
@@ -28,7 +28,7 @@ class Python extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 						<div className="card-footer bg-success">
-							<h4 className="my-0 font-weight-normal">Classroom</h4>
+							<h4 className="my-0 font-weight-normal">Operators</h4>
 						</div>
 					</div>
 					<div className="card shadow-sm border-success" id="menu3">
@@ -37,7 +37,7 @@ class Python extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 						<div className="card-footer bg-success">
-							<h4 className="my-0 font-weight-normal">Classroom</h4>
+							<h4 className="my-0 font-weight-normal">Variables</h4>
 						</div>
 					</div>
 				</div>
@@ -49,7 +49,7 @@ class Python extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 						<div className="card-footer bg-success">
-							<h4 className="my-0 font-weight-normal">Classroom</h4>
+							<h4 className="my-0 font-weight-normal">Collections</h4>
 						</div>
 					</Link>
 					<div className="card shadow-sm border-success" id="menu2">
@@ -58,7 +58,7 @@ class Python extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 						<div className="card-footer bg-success">
-							<h4 className="my-0 font-weight-normal">Classroom</h4>
+							<h4 className="my-0 font-weight-normal">Loops</h4>
 						</div>
 					</div>
 					<div className="card shadow-sm border-success" id="menu3">
@@ -67,7 +67,7 @@ class Python extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 						<div className="card-footer bg-success">
-							<h4 className="my-0 font-weight-normal">Classroom</h4>
+							<h4 className="my-0 font-weight-normal">TBA</h4>
 						</div>
 					</div>
 				</div>

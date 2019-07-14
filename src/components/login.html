@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		/** {*/
+		/*    padding: 0;*/
+		/*    margin: 0;*/
+		/*    border: 0;*/
+		/*}*/
+		.form-signin * {
+			margin: auto;
+			padding: 10px;
+			font-size: 16px;
+			display: block;
+		}
+		.g-signin2 * {
+			margin: auto;
+		}
+	</style>
+	<head>
+		<title>CodeSpice</title>
+		<meta charset="UTF-8" />
+		<meta
+			name="google-signin-client_id"
+			content="371967354426-s53c8hs1fl05o4q17ukpnalf9osockb7.apps.googleusercontent.com"
+		/>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+	<body style="background-color:forestgreen;">
+		<div class="container">
+			<div class="header">
+				<nav>
+					<ul class="nav nav-pills pull-right">
+						<li role="presentation"><a href="/">Home</a></li>
+						<li role="presentation"><a href="/signin">Sign In</a></li>
+						<li role="presentation" class="active"><a href="">Sign Up</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<form class="form-signin">
+					<input
+						type="text"
+						name="inputName"
+						id="inputName"
+						class="form-control"
+						placeholder="Name"
+						required
+						autofocus
+					/>
+					<input
+						type="text"
+						name="inputUserID"
+						id="inputUserID"
+						class="form-control"
+						placeholder="User ID"
+						required
+						autofocus
+					/>
+					<input
+						type="email"
+						name="inputEmail"
+						id="inputEmail"
+						class="form-control"
+						placeholder="Email address"
+						required
+						autofocus
+					/>
+					<input
+						type="password"
+						name="inputPassword"
+						id="inputPassword"
+						class="form-control"
+						placeholder="Password"
+						required
+					/>
+					<div>
+						<button
+							id="btnSignUp"
+							class="btn btn-lg btn-primary btn-block"
+							type="button"
+						>
+							Sign up
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+			<footer class="footer">
+				<p>&copy; Static 2019</p>
+			</footer>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$("#btnSignUp").click(function() {
+				$.ajax({
+					url: "https://codespice.herokuapp.com/signuppost",
+					data: $("form").serialize(),
+					type: "POST",
+					success: function(response) {
+						console.log(response);
+					},
+					error: function(error) {
+						console.log(error);
+					}
+				});
+			});
+		});
+		function onSignIn(googleUser) {
+			id_token = googleUser.getAuthResponse().id_token;
+			xhr = new XMLHttpRequest();
+			xhr.open("POST", "https://codespice.herokuapp.com/googletoken");
+			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xhr.onload = function() {
+				console.log("Signed in as: " + xhr.responseText);
+			};
+			xhr.send("google-token=" + id_token);
+		}
+	</script>
+</html>

@@ -14,10 +14,30 @@
 	color: #000000;
 }
 
+#editor,
+#input {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+}
+
+#run-button {
+	display: block;
+}
+
 .game-height {
 	height: 450px;
 }
 
+.log-height {
+	height: 50px;
+}
+
+.log-height div {
+	margin-left: 58px;
+}
+
 .answer-edit {
-	width: 250px;
+	width: 400px;
 }
