@@ -21,10 +21,10 @@ class Sandbox extends Component {
 								RUN
 							</button>
 						</div>
-						<div className="card border-success" id="run-button">
+						<div className="card border-success">
 							<iframe
 								id="editor"
-								src="https://codespice.herokuapp.com/editor"
+								src="http://10.1.8.101:5010/editor"
 								width="100%"
 								height="100%"
 							/>

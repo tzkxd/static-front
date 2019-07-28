@@ -27,7 +27,7 @@ class Classroom extends Component {
 							<a className="stretched-link" href="#" />
 						</div>
 					</Link>
-					<div className="card mb-0 shadow-sm border-success">
+					<Link to="/java" className="card shadow-sm border-success" id="menu1">
 						<div className="card-header bg-success">
 							<h4 className="my-0 font-weight-normal">Java</h4>
 						</div>
@@ -35,8 +35,12 @@ class Classroom extends Component {
 							<img className="card-img-top" src={java} alt="temp" />
 							<a className="stretched-link" href="#" />
 						</div>
-					</div>
-					<div className="card mb-0 shadow-sm border-success">
+					</Link>
+					<Link
+						to="/cplus"
+						className="card shadow-sm border-success"
+						id="menu1"
+					>
 						<div className="card-header bg-success">
 							<h4 className="my-0 font-weight-normal">C++</h4>
 						</div>
@@ -44,7 +48,7 @@ class Classroom extends Component {
 							<img className="card-img-top" src={cplus} alt="temp" />
 							<a className="stretched-link" href="#" />
 						</div>
-					</div>
+					</Link>
 				</div>
 			</div>
 		);

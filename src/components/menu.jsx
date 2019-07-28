@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import classroom from "./img/Classroom.png";
-import battleground from "./img/Battleground.png";
-import sandbox from "./img/Sandbox.png";
+import classroom from "./img/c-off.png";
+import battleground from "./img/b-off.jpg";
+import sandbox from "./img/s-off.png";
 
 import "../assets/component.css";
 
